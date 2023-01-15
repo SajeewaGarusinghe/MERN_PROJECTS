@@ -1,4 +1,4 @@
-const mongoose = require('mongooose');
+const mongoose = require('mongoose');
 
 const bootcampSchema = new mongoose.Schema({
   name: {
@@ -9,7 +9,7 @@ const bootcampSchema = new mongoose.Schema({
   rating: {
     type: Number,
     required: [true, 'Please provide a rating for the bootcamp'],
-    unique: true,
+    unique: false,
   },
   description: {
     type: String,
